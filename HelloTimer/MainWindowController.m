@@ -73,17 +73,15 @@
 }
 
 /*
- * 計算時間，並在格式化後顯示於視窗上
+ * 計算時間，並更新顯示時間
  */
 - (void)update
 {
-    NSTimeInterval currentTime = [self.startTime timeIntervalSinceNow] * -1;
-    int min = (int)currentTime / 60;
-    int sec = (int)currentTime % 60;
-    NSString *nowTimeString = [NSString stringWithFormat:@"%02d:%02d", min, sec];
+    // timeIntervalSinceNow 方法會回傳  = (NSDate 物件的時間 - 現在時間)，基本上是負值，所以要再乘上 -1
+    // dateWithTimeIntervalSinceReferenceDate 方法則是依傳入時間建立 NSDate 物件
+    NSDate *nowTime = [NSDate dateWithTimeIntervalSinceReferenceDate: [self.startTime timeIntervalSinceNow] * -1];
     
-    
-    [self.timerTextField setStringValue:nowTimeString];
+    [self.timerTextField setObjectValue:nowTime];   // 改成使用 setObjectValue 方法傳入
 }
 
 #pragma mark -

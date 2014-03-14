@@ -1,6 +1,6 @@
 ## Instruction
 
-This is a simple OS X Application with using NSTimer.
+This is a simple OS X Application with using NSFormatter.
 
 The Tutorial is in TakoBear.tw
 

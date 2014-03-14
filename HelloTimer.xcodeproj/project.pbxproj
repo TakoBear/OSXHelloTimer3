@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		090FAF7F18CB5F670027CBB3 /* TimerTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 090FAF7E18CB5F670027CBB3 /* TimerTextFieldCell.m */; };
 		09983C4B18C9F3E700EC4DF5 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09983C4A18C9F3E700EC4DF5 /* Cocoa.framework */; };
 		09983C5518C9F3E700EC4DF5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 09983C5318C9F3E700EC4DF5 /* InfoPlist.strings */; };
 		09983C5718C9F3E700EC4DF5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 09983C5618C9F3E700EC4DF5 /* main.m */; };
@@ -33,6 +34,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		090FAF7D18CB5F670027CBB3 /* TimerTextFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerTextFieldCell.h; sourceTree = "<group>"; };
+		090FAF7E18CB5F670027CBB3 /* TimerTextFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimerTextFieldCell.m; sourceTree = "<group>"; };
 		09983C4718C9F3E700EC4DF5 /* HelloTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09983C4A18C9F3E700EC4DF5 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		09983C4D18C9F3E700EC4DF5 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -78,6 +81,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		090FAF7918CB580C0027CBB3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				090FAF7D18CB5F670027CBB3 /* TimerTextFieldCell.h */,
+				090FAF7E18CB5F670027CBB3 /* TimerTextFieldCell.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		09983C3E18C9F3E700EC4DF5 = {
 			isa = PBXGroup;
 			children = (
@@ -120,6 +132,7 @@
 		09983C5018C9F3E700EC4DF5 /* HelloTimer */ = {
 			isa = PBXGroup;
 			children = (
+				090FAF7918CB580C0027CBB3 /* Models */,
 				09983C7F18C9F48D00EC4DF5 /* Controllers */,
 				09983C7E18C9F47D00EC4DF5 /* Resources */,
 				09983C5C18C9F3E700EC4DF5 /* bearAppDelegate.h */,
@@ -279,6 +292,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				09983C8318C9F6FC00EC4DF5 /* MainWindowController.m in Sources */,
+				090FAF7F18CB5F670027CBB3 /* TimerTextFieldCell.m in Sources */,
 				09983C5E18C9F3E700EC4DF5 /* bearAppDelegate.m in Sources */,
 				09983C5718C9F3E700EC4DF5 /* main.m in Sources */,
 			);
