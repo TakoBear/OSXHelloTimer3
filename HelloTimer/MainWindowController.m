@@ -109,7 +109,7 @@
 /*
  * 使用 soundNamed: 方法自動搜尋並播放音效檔
  * 首先會在 APP 的 Main Bundle 中尋找是否有符合名稱的音效檔
- * 如果沒有再從從以下路徑尋找：
+ * 如果沒有再從以下路徑尋找：
  * ~/Library/Sounds
  * /Library/Sounds
  * /Network/Library/Sounds
@@ -122,7 +122,6 @@
     if(systemSound) {
         [systemSound play];
     }
-
 }
 
 @end
