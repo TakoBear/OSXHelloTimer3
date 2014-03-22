@@ -1,6 +1,6 @@
 ## Instruction
 
-This is a simple OS X Application with using NSFormatter.
+This is a simple timer OS X Application with playing system sound.
 
 The Tutorial is in TakoBear.tw
 
