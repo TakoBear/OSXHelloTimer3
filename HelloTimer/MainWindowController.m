@@ -93,6 +93,9 @@
  */
 - (IBAction)handleClick:(id)sender
 {
+    // 播放音效
+    [self playSystemSound];
+    
     NSButton *btn = sender;
     
     if([btn state] == NSOnState) {
@@ -101,6 +104,25 @@
     else {
         [self stop];
     }
+}
+
+/*
+ * 使用 soundNamed: 方法自動搜尋並播放音效檔
+ * 首先會在 APP 的 Main Bundle 中尋找是否有符合名稱的音效檔
+ * 如果沒有再從從以下路徑尋找：
+ * ~/Library/Sounds
+ * /Library/Sounds
+ * /Network/Library/Sounds
+ * /System/Library/Sounds
+ * 如果都沒有，則會回傳 nil
+ */
+- (void) playSystemSound
+{
+    NSSound *systemSound = [NSSound soundNamed:@"Glass"];
+    if(systemSound) {
+        [systemSound play];
+    }
+
 }
 
 @end
